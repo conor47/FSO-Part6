@@ -8,7 +8,7 @@ const Notification = (props) => {
     border: "solid",
     padding: 10,
     borderWidth: 1,
-    visibility: notification !== "" ? "visible" : "hidden",
+    visibility: notification !== null ? "visible" : "hidden",
   };
   return <div style={style}>{notification}</div>;
 };
